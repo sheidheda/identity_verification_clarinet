@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.app-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button.register {
+  background-color: #28a745;
+}
+
+.button.verify {
+  background-color: #17a2b8;
+}
+
+.button.check {
+  background-color: #007bff;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.result {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.result p {
+  font-size: 16px;
+  color: #333;
+}
+
+
+.clarity-animation {
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.clarity-animation span {
+  color: #0072ff;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  animation: glowing 1.5s infinite;
+}
+
+@keyframes glowing {
+  0% { text-shadow: 0 0 5px #0072ff, 0 0 10px #0072ff; }
+  50% { text-shadow: 0 0 20px #0072ff, 0 0 30px #00bfff; }
+  100% { text-shadow: 0 0 5px #0072ff, 0 0 10px #0072ff; }
+}
